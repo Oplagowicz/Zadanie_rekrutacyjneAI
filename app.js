@@ -47,7 +47,7 @@ fs.readFile(articlePath, 'utf8', async (err, articleText) => {
   const prompt =
     'Convert the above article into well-structured HTML, following these guidelines:\n' +
     '- Use appropriate HTML tags for structuring the content.\n' +
-    '- Identify places to insert images, marked with <img> tags with src="image_placeholder.jpg".\n' +
+    '- Identify places to insert images, marked with <img> tags with src="image_placeholder_1.jpg", "image_placeholder_2.jpg", etc., increasing the number for each image sequentially.\n' +
     '- Add alt attributes to each image tag with a description for generating the images.\n' +
     '- Add captions below each image using appropriate HTML tags.\n' +
     '- For each image, create a <figcaption> tag below it. The content of <figcaption> should be taken from the alt attribute of the <img> tag and translated into Polish.\n' +
