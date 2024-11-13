@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artykul</title>
     <style>
-        
+        body {
+
+            background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+}
+
+            @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+}
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            padding: 16px;
+        }
+
+        figcaption {
+            font-size: 20px;
+            font-weight: 600;
+        }
 
 
     </style>
 </head>
+
 <body>
     <!--  <body> puste  -->
 </body>
