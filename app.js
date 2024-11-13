@@ -50,8 +50,10 @@ fs.readFile(articlePath, 'utf8', async (err, articleText) => {
     '- Identify places to insert images, marked with <img> tags with src="image_placeholder.jpg".\n' +
     '- Add alt attributes to each image tag with a description for generating the images.\n' +
     '- Add captions below each image using appropriate HTML tags.\n' +
+    '- For each image, create a <figcaption> tag below it. The content of <figcaption> should be taken from the alt attribute of the <img> tag and translated into Polish.\n' +
     '- Do not include any CSS or JavaScript.\n' +
     '- Return only the content without <html>, <head>, or <body> tags.\n';
+    '- Create the file content EXCLUSIVELY IN POLISH.\n';
 
   // Get generated HTML content from OpenAI
   const htmlContent = await getOpenAIResponse(articleText, prompt);
